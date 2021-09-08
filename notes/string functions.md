@@ -1,6 +1,6 @@
 ### String Functions
 
-1. strcat: concatenate two strings
+```strcat``` appends a copy of the source string to the end of destination string
 ```c
 #include <stdio.h>
 #include <string.h>
