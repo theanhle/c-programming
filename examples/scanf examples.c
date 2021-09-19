@@ -2,7 +2,7 @@
 
 int main()
 {
-	char s1[31], s2[31], s3[31], s4[31];
+    char s1[31], s2[31], s3[31], s4[31];
     char s5[31], s6[31], s7[31], s8[31];
 	
     scanf("%s", s1); // Garry Kasparov -> Garry
@@ -24,5 +24,5 @@ int main()
     printf("\n%s\n%s\n%s\n%s", s1, s2, s3, s4);
     printf("\n%s\n%s\n%s\n%s", s5, s6, s7, s8);
 	
-	return 0;
+    return 0;
 }
