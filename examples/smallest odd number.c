@@ -33,6 +33,6 @@ int main ()
     else
         printf("The smallest odd number is %d", min);
 
-	return 0;
+    return 0;
 }
 	
