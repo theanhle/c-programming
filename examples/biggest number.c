@@ -8,9 +8,8 @@ int add_digit(int n, int digit, int pos);
 int count_digits(int n);
 
 add_digit(1234, 8, 1) 1234 -> 123   4 -> 1238 + 4 
-count_digits(1234) -> 4                                 1234 12  34
+count_digits(1234) -> 4               1234 12  34
 
-n
 l = n/10^pos; 123       12
 r = n%10^pos; 4         34
 
