@@ -52,7 +52,7 @@ FILE *fi = fopen("prf192.txt", "r");
 	
 n = 0;
 while (fscanf(fi, "%6[^|]|%30[^|]|%lf%*c", id[n], name[n], &grade[n]) == 3)
-	n++;	
+    n++;
 	
 fclose(fi);
 	
