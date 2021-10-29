@@ -4,15 +4,26 @@
 Write to file
 
 ```c
-FILE *fp = NULL;
-fp = fopen("out.txt", "w");
-if (fp == NULL)
+FILE *fo = NULL;
+fo = fopen("out.txt", "w");
+if (fo == NULL)
     printf("Failed to open file!");
 else
 {
-    fprintf(fp, "%s\n", "I was created by a C program.");
-    fclose(fp);
+    fprintf(fo, "%s\n", "I was created by a C program.");
+    fclose(fo);
 }
+```
+
+Read from file
+
+```c
+int a;
+char s[100];
+
+FILE *fi = fopen("inp.txt", "r");
+fscanf(fi, "%d %[^\n]", &a, s);
+fclose(fi);
 ```
 
 Read the whole file content
