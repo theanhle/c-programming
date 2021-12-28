@@ -6,7 +6,7 @@ int add_digit(int n[], int len, int pos, int digit)
 	int i, num = 0;
 
 	for (i = 0; i < len; i++)
-	{	
+	{
 		if (i == pos)
 			num = num*10 + digit;
 		num = num*10 + n[i];
@@ -14,7 +14,7 @@ int add_digit(int n[], int len, int pos, int digit)
 
 	if (pos == len)
 		num = num*10 + digit;
-	
+
 	return num;
 }
 
@@ -32,7 +32,7 @@ int main()
 		if (c != ' ')
 			n[len++] = c - '0';
 	} while (c != ' ');
-	
+
 	scanf("%d", &m);
 
 	num = add_digit(n, len, 0, 0);
@@ -49,6 +49,6 @@ int main()
 		printf("%d", max);
 	else
 		printf("Impossible");
-		
+
 	return 0;
 }
