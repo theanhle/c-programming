@@ -34,16 +34,84 @@
  * Form a group of three members and enjoy this task!
  */
 
-#include <stdio.h>
 
-// prototype declaration
+#include <stdio.h>
+#include <stdlib.h>
+
+void print_menu();
+void add_contact();
+void edit_contact();
+void delete_contact();
 
 
 int main()
 {
-	printf("CONTACT KEEPER\n");
+	char choice;
+
+	do
+	{
+		system("clear"); // for unix
+		// system("cls"); // for windows
+		print_menu();
+		scanf("%c%*c", &choice);
+
+		system("clear"); // for unix
+		// system("cls"); // for windows
+
+		printf("CONTACT KEEPER\n");
+		printf("==============\n\n");
+
+		switch(choice)
+		{
+			case '1':
+				add_contact();
+				break;
+			case '2':
+				edit_contact();
+				break;
+			case '3':
+				delete_contact();
+				break;
+		}
+		
+		if (choice != 'q')
+		{
+			printf("\n\n---\n");
+			printf("Press any key to back to main menu.");
+			getchar();
+		}
+	}
+	while (choice != 'q');
 
 	return 0;
 }
 
-// function definition
+
+void print_menu()
+{
+	printf("CONTACT KEEPER\n");
+	printf("==============\n\n");
+	printf("1. Add Contact\n");
+	printf("2. Edit Contact\n");
+	printf("3. Delete Contact\n");
+	printf("q. Quit\n\n");
+	printf("Enter your choice (1/2/3/q): ");
+}
+
+
+void add_contact()
+{
+	printf("Write your code to add new contact here.");
+}
+
+
+void edit_contact()
+{
+	printf("Write your code to edit contact here.");
+}
+
+
+void delete_contact()
+{
+	printf("Write your code to delete contact here.");
+}
