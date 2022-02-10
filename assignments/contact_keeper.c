@@ -17,7 +17,7 @@
  *		7. Birthday
  *
  * Data validation should be implemented, for example:
- *		1. Phone Number should be a number of 9 or 10 digits
+ *		1. Phone Number should be a integer number of 9 or 10 digits
  *		2. Bithday should be in the DD/MM/YYYY format 
  *
  * Your program should have at least six functions:
@@ -101,17 +101,17 @@ void print_menu()
 
 void add_contact()
 {
-	printf("Write your code to add new contact here.");
+	printf("Write your code here to add new contact.");
 }
 
 
 void edit_contact()
 {
-	printf("Write your code to edit contact here.");
+	printf("Write your code here to edit contact.");
 }
 
 
 void delete_contact()
 {
-	printf("Write your code to delete contact here.");
+	printf("Write your code here to delete contact.");
 }
