@@ -11,7 +11,10 @@ int main()
 
 	get_array(&a, &n);
 	if (a != NULL)
+	{
 		print_array(a, n);
+		free(a);
+	}
 
 	return 0;
 }
