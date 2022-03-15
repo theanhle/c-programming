@@ -1,5 +1,8 @@
-/* write a program to read two matrices read from the "inp.txt" file, multiply them, 
-*  and write the result matrix to the "out.txt" file. For example,
+/* Write a program to
+ * - read two matrices from the "inp.txt" file,
+ * - multiply them, 
+*  - and write the obtained matrix to the "out.txt" file.
+*  For example,
 *  inp.txt: 
 *	2 3 
 * 	1 2 3 
@@ -25,17 +28,24 @@ int main()
 {
 	int a[100][100], b[100][100], c[100][100];
 	int ar, ac, br, bc, i, j, k;
-	FILE *f = fopen("inp.txt", "r");
-	
-	get_array(f, a, &ar, &ac);
-	get_array(f, b, &br, &bc);
-	if (ac != br)
-		printf("Matrix dimensions are not compatible!");
+	FILE *f = NULL;
+
+	f = fopen("inp.txt", "r");
+	if (f == NULL)
+		printf("Input file not found!");
 	else
 	{
-		multiply(a, b, c, ar, ac, bc);
-		write_array("out.txt", c, ar, bc);
+		get_array(f, a, &ar, &ac);
+		get_array(f, b, &br, &bc);
+		if (ac != br)
+			printf("Matrix dimensions are not compatible!");
+		else
+		{
+			multiply(a, b, c, ar, ac, bc);
+			write_array("out.txt", c, ar, bc);
+		}
 	}
+	fclose(f);
 
 	return 0;
 }
@@ -75,4 +85,5 @@ void write_array(char filename[], int a[][100], int rows, int cols)
 			fprintf(f, "%d ", a[i][j]);
 		fprintf(f, "\n");
 	}
+	fclose(f);
 }
