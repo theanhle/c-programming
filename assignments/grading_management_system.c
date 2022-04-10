@@ -48,12 +48,12 @@
  *	   | HE123456 |Le Van An   |   8.5  |    9.0      |      7.6     |   9.5    |Passed|
  *	    -------------------------------------------------------------------------------
  *
- *	Your GMS has to permanently store student's grades in a text file on the secondary
- *	storage.
+ * Your GMS has to permanently store student's grades in a text file on the secondary
+ * storage.
  *
- *	Working well with your classmates is one of the important parts of this course.
- *	So, I encourage you to take time to get to know your classmates, form your group of
- *	three members, and enjoy this assignment!
+ * Working well with your classmates is one of the important parts of this course.
+ * So, I encourage you to take time to get to know your classmates, form your group of
+ * three members, and enjoy this assignment!
  */
  
 #include <stdio.h>
