@@ -18,16 +18,16 @@
  *	5. Final Result: This grade should be computed automatically using the below formula:
  *		Final Result = 0.1 * Workshop + 0.1 * Progress Test + 0.1 * Assignment + 
  *					   0.4 * Practical Exam + 0.3 * Final Exam
- *	5. Status (Passed / Failed). This information should be computed automatically.
+ *	6. Status (Passed / Failed). This information should be computed automatically.
  *		+ Status is "Passed" if and only if all below conditions are sastified:
  *			- Workshop, Progress Test, Assignment > 0
  *			- Final Exam >= 4
  *			- Final Result >= 5
  *		+ Otherwise, Status is "Failed"
  *
- *	Your GMS should be able to validate the input data. For example,
- *		+ Student ID must be a string of length 8
- *		+ Student's grades must be in range [0, 10]
+ * Your GMS should be able to validate the input data. For example,
+ *	1. Student ID must be a string of length 8
+ *	2. Student's grades must be in range [0, 10]
  *
  * Your GMS has to have at least seven functions:
  *	1. Add new a student's grade (as well as the related information mentioned above).
@@ -39,7 +39,7 @@
  *	    ------------------------------------------------------------------
  *	   |Class Name|Workshop|Progress Test|Practical Exam|Final Exam|Status|
  *	    ------------------------------------------------------------------
- *	   | HE123456 |   8.5  |    9.0      |      7.6     |   9.5    |Passed|
+ *	   | SE123456 |   8.5  |    9.0      |      7.6     |   9.5    |Passed|
  *	    ------------------------------------------------------------------
  *	7. Find and list the grades of a given class in the tabular format
  *	    -------------------------------------------------------------------------------
