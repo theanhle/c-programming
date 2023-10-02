@@ -3,7 +3,8 @@
 
 void print_menu()
 {
-    system("clear");
+    system("clear"); // for macos, linux
+    // system("cls"); // for windows
     printf(" ================================== \n");
     printf("|             QUIZ GAME            |\n");
     printf("|             ---------            |\n");
